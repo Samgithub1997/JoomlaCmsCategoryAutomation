@@ -3,9 +3,9 @@ use Page\Category as CategoryManager;
 
 class CategoryCRUDCest
 {
-
-
+//Category Title
     public static $categoryName = " ";
+//Category Alias
     public static $categoryAlias = " ";
 
     public function categoryCreate(\AcceptanceTester $I){
