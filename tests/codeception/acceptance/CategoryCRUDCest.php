@@ -22,7 +22,7 @@ class CategoryCRUDCest
         $I->click(CategoryManager::$newCategory);
 
         //Implementing faker library to give fake title and alias
-        $categoryName = $faker->title;
+        $categoryName = $faker->name;
         $I->fillField(CategoryManager::$categoryTitle,$categoryName);
 
         $categoryAlias = $faker->userName;
