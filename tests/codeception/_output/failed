@@ -1,0 +1,3 @@
+tests/codeception/acceptance/CategoryCRUDCest.php:categoryCreate
+tests/codeception/acceptance/CategoryCRUDCest.php:categotyEdit
+tests/codeception/acceptance/CategoryCRUDCest.php:categoryDelete

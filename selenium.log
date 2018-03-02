@@ -1,0 +1,415 @@
+01:20:28.377 INFO - Selenium build info: version: '3.8.1', revision: '6e95a6684b'
+01:20:28.378 INFO - Launching a standalone Selenium Server
+2018-03-02 01:20:28.686:INFO::main: Logging initialized @1994ms to org.seleniumhq.jetty9.util.log.StdErrLog
+01:20:28.759 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:20:28.781 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:20:28.784 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:20:28.785 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+01:20:28.785 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:20:28.786 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:20:28.787 INFO - Driver class not found: org.openqa.selenium.phantomjs.PhantomJSDriver
+01:20:28.857 INFO - Driver provider class org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities {browserName: internet explorer, ensureCleanSession: true, platform: WINDOWS, version: } does not match the current platform LINUX
+01:20:28.857 INFO - Driver provider class org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: } does not match the current platform LINUX
+01:20:28.858 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities {browserName: safari, platform: MAC, version: } does not match the current platform LINUX
+01:20:28.904 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:20:28.905 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:20:28.905 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:20:28.906 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:20:28.906 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:20:28.915 INFO - Using the passthrough mode handler
+2018-03-02 01:20:28.963:INFO:osjs.Server:main: jetty-9.4.7.v20170914
+2018-03-02 01:20:28.994:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@757942a1{/,null,STARTING} has uncovered http methods for path: /
+2018-03-02 01:20:28.999:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@757942a1{/,null,AVAILABLE}
+Usage: <main class> [options]
+  Options:
+    --version, -version
+       Displays the version and exits.
+       Default: false
+    -browserTimeout
+       <Integer> in seconds : number of seconds a browser session is allowed to
+       hang while a WebDriver command is running (example: driver.get(url)). If the
+       timeout is reached while a WebDriver command is still processing, the session
+       will quit. Minimum value is 60. An unspecified, zero, or negative value means
+       wait indefinitely.
+       Default: 0
+    -debug
+       <Boolean> : enables LogLevel.FINE.
+       Default: false
+    -enablePassThrough
+       <Boolean>: Whether or not to use the experimental passthrough mode.
+       Defaults to true.
+       Default: true
+    -jettyThreads, -jettyMaxThreads
+       <Integer> : max number of threads for Jetty. An unspecified, zero, or
+       negative value means the Jetty default value (200) will be used.
+    -log
+       <String> filename : the filename to use for logging. If omitted, will log
+       to STDOUT
+    -port
+       <Integer> : the port number the server will use.
+       Default: 4444
+    -role
+       <String> options are [hub], [node], or [standalone].
+       Default: standalone
+    -timeout, -sessionTimeout
+       <Integer> in seconds : Specifies the timeout before the server
+       automatically kills a session that hasn't had any activity in the last X seconds. The
+       test slot will then be released for another test to use. This is typically
+       used to take care of client crashes. For grid hub/node roles, cleanUpCycle
+       must also be set.
+       Default: 1800
+
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:198)
+	at org.openqa.grid.selenium.GridLauncherV3$1.launch(GridLauncherV3.java:237)
+	at org.openqa.grid.selenium.GridLauncherV3.main(GridLauncherV3.java:82)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.seleniumhq.jetty9.server.ServerConnector.openAcceptChannel(ServerConnector.java:334)
+	at org.seleniumhq.jetty9.server.ServerConnector.open(ServerConnector.java:302)
+	at org.seleniumhq.jetty9.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.seleniumhq.jetty9.server.ServerConnector.doStart(ServerConnector.java:238)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.seleniumhq.jetty9.server.Server.doStart(Server.java:428)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:196)
+	... 2 more
+01:22:01.260 INFO - Selenium build info: version: '3.8.1', revision: '6e95a6684b'
+01:22:01.261 INFO - Launching a standalone Selenium Server
+2018-03-02 01:22:01.350:INFO::main: Logging initialized @330ms to org.seleniumhq.jetty9.util.log.StdErrLog
+01:22:01.392 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:22:01.410 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:22:01.413 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:22:01.414 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+01:22:01.414 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:22:01.414 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:22:01.415 INFO - Driver class not found: org.openqa.selenium.phantomjs.PhantomJSDriver
+01:22:01.450 INFO - Driver provider class org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities {browserName: internet explorer, ensureCleanSession: true, platform: WINDOWS, version: } does not match the current platform LINUX
+01:22:01.450 INFO - Driver provider class org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: } does not match the current platform LINUX
+01:22:01.451 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities {browserName: safari, platform: MAC, version: } does not match the current platform LINUX
+01:22:01.490 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:22:01.491 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:22:01.491 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:22:01.492 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:22:01.492 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:22:01.500 INFO - Using the passthrough mode handler
+2018-03-02 01:22:01.546:INFO:osjs.Server:main: jetty-9.4.7.v20170914
+2018-03-02 01:22:01.578:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@757942a1{/,null,STARTING} has uncovered http methods for path: /
+2018-03-02 01:22:01.583:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@757942a1{/,null,AVAILABLE}
+Usage: <main class> [options]
+  Options:
+    --version, -version
+       Displays the version and exits.
+       Default: false
+    -browserTimeout
+       <Integer> in seconds : number of seconds a browser session is allowed to
+       hang while a WebDriver command is running (example: driver.get(url)). If the
+       timeout is reached while a WebDriver command is still processing, the session
+       will quit. Minimum value is 60. An unspecified, zero, or negative value means
+       wait indefinitely.
+       Default: 0
+    -debug
+       <Boolean> : enables LogLevel.FINE.
+       Default: false
+    -enablePassThrough
+       <Boolean>: Whether or not to use the experimental passthrough mode.
+       Defaults to true.
+       Default: true
+    -jettyThreads, -jettyMaxThreads
+       <Integer> : max number of threads for Jetty. An unspecified, zero, or
+       negative value means the Jetty default value (200) will be used.
+    -log
+       <String> filename : the filename to use for logging. If omitted, will log
+       to STDOUT
+    -port
+       <Integer> : the port number the server will use.
+       Default: 4444
+    -role
+       <String> options are [hub], [node], or [standalone].
+       Default: standalone
+    -timeout, -sessionTimeout
+       <Integer> in seconds : Specifies the timeout before the server
+       automatically kills a session that hasn't had any activity in the last X seconds. The
+       test slot will then be released for another test to use. This is typically
+       used to take care of client crashes. For grid hub/node roles, cleanUpCycle
+       must also be set.
+       Default: 1800
+
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:198)
+	at org.openqa.grid.selenium.GridLauncherV3$1.launch(GridLauncherV3.java:237)
+	at org.openqa.grid.selenium.GridLauncherV3.main(GridLauncherV3.java:82)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.seleniumhq.jetty9.server.ServerConnector.openAcceptChannel(ServerConnector.java:334)
+	at org.seleniumhq.jetty9.server.ServerConnector.open(ServerConnector.java:302)
+	at org.seleniumhq.jetty9.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.seleniumhq.jetty9.server.ServerConnector.doStart(ServerConnector.java:238)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.seleniumhq.jetty9.server.Server.doStart(Server.java:428)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:196)
+	... 2 more
+01:23:00.109 INFO - Selenium build info: version: '3.8.1', revision: '6e95a6684b'
+01:23:00.110 INFO - Launching a standalone Selenium Server
+2018-03-02 01:23:00.210:INFO::main: Logging initialized @384ms to org.seleniumhq.jetty9.util.log.StdErrLog
+01:23:00.254 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:23:00.271 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:23:00.274 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:23:00.275 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+01:23:00.275 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:23:00.276 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:23:00.276 INFO - Driver class not found: org.openqa.selenium.phantomjs.PhantomJSDriver
+01:23:00.313 INFO - Driver provider class org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities {browserName: internet explorer, ensureCleanSession: true, platform: WINDOWS, version: } does not match the current platform LINUX
+01:23:00.313 INFO - Driver provider class org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: } does not match the current platform LINUX
+01:23:00.314 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities {browserName: safari, platform: MAC, version: } does not match the current platform LINUX
+01:23:00.350 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:23:00.351 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:23:00.351 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:23:00.352 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:23:00.352 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:23:00.361 INFO - Using the passthrough mode handler
+2018-03-02 01:23:00.405:INFO:osjs.Server:main: jetty-9.4.7.v20170914
+2018-03-02 01:23:00.440:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@757942a1{/,null,STARTING} has uncovered http methods for path: /
+2018-03-02 01:23:00.444:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@757942a1{/,null,AVAILABLE}
+Usage: <main class> [options]
+  Options:
+    --version, -version
+       Displays the version and exits.
+       Default: false
+    -browserTimeout
+       <Integer> in seconds : number of seconds a browser session is allowed to
+       hang while a WebDriver command is running (example: driver.get(url)). If the
+       timeout is reached while a WebDriver command is still processing, the session
+       will quit. Minimum value is 60. An unspecified, zero, or negative value means
+       wait indefinitely.
+       Default: 0
+    -debug
+       <Boolean> : enables LogLevel.FINE.
+       Default: false
+    -enablePassThrough
+       <Boolean>: Whether or not to use the experimental passthrough mode.
+       Defaults to true.
+       Default: true
+    -jettyThreads, -jettyMaxThreads
+       <Integer> : max number of threads for Jetty. An unspecified, zero, or
+       negative value means the Jetty default value (200) will be used.
+    -log
+       <String> filename : the filename to use for logging. If omitted, will log
+       to STDOUT
+    -port
+       <Integer> : the port number the server will use.
+       Default: 4444
+    -role
+       <String> options are [hub], [node], or [standalone].
+       Default: standalone
+    -timeout, -sessionTimeout
+       <Integer> in seconds : Specifies the timeout before the server
+       automatically kills a session that hasn't had any activity in the last X seconds. The
+       test slot will then be released for another test to use. This is typically
+       used to take care of client crashes. For grid hub/node roles, cleanUpCycle
+       must also be set.
+       Default: 1800
+
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:198)
+	at org.openqa.grid.selenium.GridLauncherV3$1.launch(GridLauncherV3.java:237)
+	at org.openqa.grid.selenium.GridLauncherV3.main(GridLauncherV3.java:82)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.seleniumhq.jetty9.server.ServerConnector.openAcceptChannel(ServerConnector.java:334)
+	at org.seleniumhq.jetty9.server.ServerConnector.open(ServerConnector.java:302)
+	at org.seleniumhq.jetty9.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.seleniumhq.jetty9.server.ServerConnector.doStart(ServerConnector.java:238)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.seleniumhq.jetty9.server.Server.doStart(Server.java:428)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:196)
+	... 2 more
+01:26:40.078 INFO - Selenium build info: version: '3.8.1', revision: '6e95a6684b'
+01:26:40.079 INFO - Launching a standalone Selenium Server
+2018-03-02 01:26:40.170:INFO::main: Logging initialized @515ms to org.seleniumhq.jetty9.util.log.StdErrLog
+01:26:40.213 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:26:40.230 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:26:40.234 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:26:40.235 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+01:26:40.236 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:26:40.237 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:26:40.237 INFO - Driver class not found: org.openqa.selenium.phantomjs.PhantomJSDriver
+01:26:40.277 INFO - Driver provider class org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities {browserName: internet explorer, ensureCleanSession: true, platform: WINDOWS, version: } does not match the current platform LINUX
+01:26:40.278 INFO - Driver provider class org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: } does not match the current platform LINUX
+01:26:40.279 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities {browserName: safari, platform: MAC, version: } does not match the current platform LINUX
+01:26:40.321 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:26:40.322 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:26:40.322 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:26:40.323 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:26:40.323 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:26:40.333 INFO - Using the passthrough mode handler
+2018-03-02 01:26:40.377:INFO:osjs.Server:main: jetty-9.4.7.v20170914
+2018-03-02 01:26:40.415:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@757942a1{/,null,STARTING} has uncovered http methods for path: /
+2018-03-02 01:26:40.421:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@757942a1{/,null,AVAILABLE}
+Usage: <main class> [options]
+  Options:
+    --version, -version
+       Displays the version and exits.
+       Default: false
+    -browserTimeout
+       <Integer> in seconds : number of seconds a browser session is allowed to
+       hang while a WebDriver command is running (example: driver.get(url)). If the
+       timeout is reached while a WebDriver command is still processing, the session
+       will quit. Minimum value is 60. An unspecified, zero, or negative value means
+       wait indefinitely.
+       Default: 0
+    -debug
+       <Boolean> : enables LogLevel.FINE.
+       Default: false
+    -enablePassThrough
+       <Boolean>: Whether or not to use the experimental passthrough mode.
+       Defaults to true.
+       Default: true
+    -jettyThreads, -jettyMaxThreads
+       <Integer> : max number of threads for Jetty. An unspecified, zero, or
+       negative value means the Jetty default value (200) will be used.
+    -log
+       <String> filename : the filename to use for logging. If omitted, will log
+       to STDOUT
+    -port
+       <Integer> : the port number the server will use.
+       Default: 4444
+    -role
+       <String> options are [hub], [node], or [standalone].
+       Default: standalone
+    -timeout, -sessionTimeout
+       <Integer> in seconds : Specifies the timeout before the server
+       automatically kills a session that hasn't had any activity in the last X seconds. The
+       test slot will then be released for another test to use. This is typically
+       used to take care of client crashes. For grid hub/node roles, cleanUpCycle
+       must also be set.
+       Default: 1800
+
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:198)
+	at org.openqa.grid.selenium.GridLauncherV3$1.launch(GridLauncherV3.java:237)
+	at org.openqa.grid.selenium.GridLauncherV3.main(GridLauncherV3.java:82)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.seleniumhq.jetty9.server.ServerConnector.openAcceptChannel(ServerConnector.java:334)
+	at org.seleniumhq.jetty9.server.ServerConnector.open(ServerConnector.java:302)
+	at org.seleniumhq.jetty9.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.seleniumhq.jetty9.server.ServerConnector.doStart(ServerConnector.java:238)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.seleniumhq.jetty9.server.Server.doStart(Server.java:428)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:196)
+	... 2 more
+01:26:59.444 INFO - Selenium build info: version: '3.8.1', revision: '6e95a6684b'
+01:26:59.444 INFO - Launching a standalone Selenium Server
+2018-03-02 01:26:59.551:INFO::main: Logging initialized @403ms to org.seleniumhq.jetty9.util.log.StdErrLog
+01:26:59.593 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:26:59.610 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:26:59.612 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:26:59.613 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+01:26:59.613 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:26:59.614 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:26:59.615 INFO - Driver class not found: org.openqa.selenium.phantomjs.PhantomJSDriver
+01:26:59.673 INFO - Driver provider class org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities {browserName: internet explorer, ensureCleanSession: true, platform: WINDOWS, version: } does not match the current platform LINUX
+01:26:59.674 INFO - Driver provider class org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: } does not match the current platform LINUX
+01:26:59.674 INFO - Driver provider class org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities {browserName: safari, platform: MAC, version: } does not match the current platform LINUX
+01:26:59.729 INFO - Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+01:26:59.730 INFO - Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()`
+01:26:59.730 INFO - Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+01:26:59.731 INFO - Using `new OperaOptions()` is preferred to `DesiredCapabilities.operaBlink()`
+01:26:59.731 INFO - Using `new SafariOptions()` is preferred to `DesiredCapabilities.safari()`
+01:26:59.739 INFO - Using the passthrough mode handler
+2018-03-02 01:26:59.800:INFO:osjs.Server:main: jetty-9.4.7.v20170914
+2018-03-02 01:26:59.836:WARN:osjs.SecurityHandler:main: ServletContext@o.s.j.s.ServletContextHandler@757942a1{/,null,STARTING} has uncovered http methods for path: /
+2018-03-02 01:26:59.840:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@757942a1{/,null,AVAILABLE}
+Usage: <main class> [options]
+  Options:
+    --version, -version
+       Displays the version and exits.
+       Default: false
+    -browserTimeout
+       <Integer> in seconds : number of seconds a browser session is allowed to
+       hang while a WebDriver command is running (example: driver.get(url)). If the
+       timeout is reached while a WebDriver command is still processing, the session
+       will quit. Minimum value is 60. An unspecified, zero, or negative value means
+       wait indefinitely.
+       Default: 0
+    -debug
+       <Boolean> : enables LogLevel.FINE.
+       Default: false
+    -enablePassThrough
+       <Boolean>: Whether or not to use the experimental passthrough mode.
+       Defaults to true.
+       Default: true
+    -jettyThreads, -jettyMaxThreads
+       <Integer> : max number of threads for Jetty. An unspecified, zero, or
+       negative value means the Jetty default value (200) will be used.
+    -log
+       <String> filename : the filename to use for logging. If omitted, will log
+       to STDOUT
+    -port
+       <Integer> : the port number the server will use.
+       Default: 4444
+    -role
+       <String> options are [hub], [node], or [standalone].
+       Default: standalone
+    -timeout, -sessionTimeout
+       <Integer> in seconds : Specifies the timeout before the server
+       automatically kills a session that hasn't had any activity in the last X seconds. The
+       test slot will then be released for another test to use. This is typically
+       used to take care of client crashes. For grid hub/node roles, cleanUpCycle
+       must also be set.
+       Default: 1800
+
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:198)
+	at org.openqa.grid.selenium.GridLauncherV3$1.launch(GridLauncherV3.java:237)
+	at org.openqa.grid.selenium.GridLauncherV3.main(GridLauncherV3.java:82)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.seleniumhq.jetty9.server.ServerConnector.openAcceptChannel(ServerConnector.java:334)
+	at org.seleniumhq.jetty9.server.ServerConnector.open(ServerConnector.java:302)
+	at org.seleniumhq.jetty9.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.seleniumhq.jetty9.server.ServerConnector.doStart(ServerConnector.java:238)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.seleniumhq.jetty9.server.Server.doStart(Server.java:428)
+	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:196)
+	... 2 more
