@@ -29,5 +29,5 @@ $selectItem clicks the checkbox which then can be editted , published or moved t
     public static $clickEdit = ['xpath' => '/html/body/div[1]/div/div/div[2]/div/div/div[2]/button'];
 
     public static $clickTrash = ['xpath' => '/html/body/div[1]/div/div/div[2]/div/div/div[10]/button'];
-;
+
 }
